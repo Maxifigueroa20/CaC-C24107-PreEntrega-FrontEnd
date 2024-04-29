@@ -1,0 +1,66 @@
+:root {
+    --primary-color: #FCE1C1;
+    --secondary-color: #FEDCD1;
+    --tertiary-color: #EBEBEB;
+}
+
+body {
+    background-color: var(--primary-color);
+    color: black;
+}
+
+nav {
+    min-height: 15vh;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.bannerSection, .registerSection, .loginSection, .detailSection, .detailSectionBackground {
+    height: 85vh;
+}
+
+.bannerContainer, .registerContainer, .loginContainer, .detailContainer {
+    min-height: 75%;
+    background-color: var(--tertiary-color);
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 15px 15px rgb(0, 0, 0, 0.7);
+}
+
+.detailContainer, .registerContainer, .loginContainer {
+    box-shadow: rgba(255, 255, 255, 0.2) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.9) 0px 0px 0px 1px;
+}
+
+.banner {
+    mix-blend-mode: multiply;
+    object-fit: contain;
+}
+
+.catalogoImg, .destacadosImg {
+    transition: all 0.5s ease-out;
+}
+
+.catalogoImg:hover, .destacadosImg:hover {
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.pagination a {
+    color: black;
+}
+
+::-webkit-scrollbar {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: black;
+}
